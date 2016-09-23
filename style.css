@@ -1,0 +1,68 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  max-width: 950px;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+.title {
+  background-color: #33bebe;
+  color: white;
+  padding: 40px;
+  padding-bottom: 0px;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.app {
+  display: flex;
+  margin-top: 50px;
+}
+
+.image {
+  margin-right: 30px;
+}
+
+.description {
+  color: #7c8b88;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 825px) {
+
+  .description {
+    font-size: 20px;
+  }
+  
+  @media screen and (max-width: 650px) {
+
+    .app {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .title {
+      font-size: 32px;
+    }
+
+    .description {
+      font-size: 17px;
+      margin: 20px;
+    }
+
+    .image {
+      margin: 0;
+    }
+
+   .app {
+     margin-top: 0;
+   }
+  }
+}
